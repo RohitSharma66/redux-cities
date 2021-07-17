@@ -1,7 +1,38 @@
 body {
-  font-family: Helvetica;
+  color: white;
+  background-color: black;
 }
+
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  .cities {
+    width: 30%;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .city {
+    border: 2px solid white;
+    padding: 8px;
+  }
+  
+  .active-city {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.list-group-item {
+  background-color: transparent;
+  cursor: pointer;
 }
