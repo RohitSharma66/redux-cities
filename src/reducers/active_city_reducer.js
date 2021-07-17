@@ -1,4 +1,4 @@
-export default function(state = null, action) {
+const activeCityReducer = (state = null, action) => {
   switch (action.type) {
     case 'CITY SELECTED' : {
       return action.payload;
@@ -7,4 +7,6 @@ export default function(state = null, action) {
       return state;
     }
   }
-}
+};
+export default activeCityReducer;
+

@@ -1,4 +1,4 @@
-export default function(state = null, action) {
+const citiesReducer = (state = null, action) => {
   switch (action.type) {
     case 'CITY SELECTED': {
       return state;
@@ -32,4 +32,6 @@ export default function(state = null, action) {
       ];
     }
   }
-}
+};
+
+export default citiesReducer;
